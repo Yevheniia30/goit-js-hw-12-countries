@@ -1,5 +1,7 @@
 import countriesTmpl from '../templates/countries.hbs';
+import countryTmpl from '../templates/country.hbs';
+import refs from '../js/refs';
 
-const refs = {};
+const updateMarkup = countries => {};
 
-const updateMarkup = () => {};
+export default updateMarkup;

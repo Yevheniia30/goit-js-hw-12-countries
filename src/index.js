@@ -1,13 +1,24 @@
 import './styles.css';
 import debounce from 'lodash.debounce';
+// import fetchCountries from './js/fetchCountries';
+import refs from './js/refs';
+// import updateMarkup from './js/updateMarkup';
+import countriesTmpl from './templates/countries.hbs';
 
-import fetchCountries from './js/fetchCountries';
-import updateMarkup from './js/updateMarkup';
+refs.inputField.addEventListener(
+  'input',
+  _.debounce(() => {}, 500),
+);
 
-const refs = {};
+const url = 'https://restcountries.eu/rest/v2/name/united';
 
-fetch(
-  'https://restcountries.eu/rest/v2/all?fields=name;capital;population;languages;flag',
-)
-  .then(response => response.json())
-  .then(data => console.log(data));
+fetch(url)
+  .then(res => res.json())
+  .then(countries => {
+    console.log(countries);
+    const markup = countriesTmpl(countries);
+    refs.resultList.insertAdjacentHTML('beforeend', markup);
+
+    console.log(markup);
+  })
+  .catch(error => console.log(error));
