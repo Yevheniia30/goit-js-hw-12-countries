@@ -16,5 +16,40 @@ body {
   /*
    * CSS image reference example.
    */
-  /* background-image: url('./images/bg-pattern.png'); */
+  background-image: url('https://img5.goodfon.ru/original/1920x1080/c/13/materiki-karta-mira-mir-zemlia-kontinenty-seryi-fon.jpg');
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.js-country-input {
+  border-color: #808080;
+  border-radius: 4px;
+}
+.country-title,
+.country-data {
+  margin-top: 0;
+}
+.country-feature {
+  font-weight: bold;
+}
+
+.country-languages {
+  margin-bottom: 20px;
+}
+.js-search-result,
+.search-item-card {
+  background-color: #fff;
+  border-radius: 8px;
+  border-color: №808080;
+}
+.search-item-card {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }

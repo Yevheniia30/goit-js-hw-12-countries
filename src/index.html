@@ -5,43 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Goit-js-hw-12-countries</title>
-
-    <!-- Don't forget to delete this style tag. -->
-    <!-- <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style> -->
   </head>
 
   <body>
     <div class="wrapper js-wrapper">
+      <h1 class="title js-title">Country search</h1>
       <input
         type="text"
         class="country-input js-country-input"
+        name="query"
         placeholder="Enter country name"
       />
-      <ul class="search-result js-search-result"></ul>
+      <ul class="list search-result js-search-result"></ul>
     </div>
   </body>
 </html>
