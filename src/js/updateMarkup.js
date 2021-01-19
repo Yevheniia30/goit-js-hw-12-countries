@@ -10,6 +10,8 @@ const updateMarkup = countries => {
   } else if (countries.length > 1 && countries.length < 11) {
     markup = countriesTmpl(countries);
     refs.resultList.insertAdjacentHTML('beforeend', markup);
+  } else if (countries.length > 10) {
+    console.log('error!');
   }
 };
 
