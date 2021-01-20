@@ -2,7 +2,6 @@ import countriesTmpl from '../templates/countries.hbs';
 import countryTmpl from '../templates/country.hbs';
 import refs from '../js/refs';
 import { error } from '../js/notifications';
-// import { from } from 'core-js/fn/array';
 
 const updateMarkup = countries => {
   let markup = '';
